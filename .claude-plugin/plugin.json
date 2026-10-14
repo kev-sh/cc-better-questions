@@ -1,0 +1,28 @@
+{
+  "name": "cc-better-questions",
+  "version": "0.1.0",
+  "description": "Questions answered in a form: open, multiple choice and yes/no, in place of AskUserQuestion.",
+  "author": { "name": "kev-sh" },
+  "license": "MIT",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "blocking": {
+      "type": "boolean",
+      "title": "Wait for answers",
+      "description": "true: Claude waits for your answers. false: Claude keeps working and gets your answers when you submit or close the form.",
+      "default": true
+    },
+    "disableWaitForAnswers": {
+      "type": "boolean",
+      "title": "Turn off wait-for-answers",
+      "description": "Only when \"Wait for answers\" is off. false: Claude can wait for your answers once it has nothing else to do. true: it ends its turn instead, and gets your answers in a message when you submit.",
+      "default": false
+    },
+    "disableAskUserQuestion": {
+      "type": "boolean",
+      "title": "Turn off AskUserQuestion",
+      "description": "true: the built-in AskUserQuestion tool is turned off, so every question uses this form. It stays on when no terminal is attached, since the form can't be answered there.",
+      "default": true
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "cc-better-questions",
+  "owner": { "name": "kev-sh" },
+  "description": "Questions answered in a form: open, multiple choice and yes/no.",
+  "plugins": [{ "name": "cc-better-questions", "source": "./" }]
+}
